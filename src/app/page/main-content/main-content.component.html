@@ -1,0 +1,22 @@
+<div class="section container">
+    <h1 class="title">Names & Ages</h1>
+
+    <table class="table is-fullwidth is-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of result">
+                <td>{{ item.id }}</td>
+                <td>{{ item.person?.firstName }}</td>
+                <td>{{ item.person?.lastName }}</td>
+                <td>{{ item.age?.age }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
